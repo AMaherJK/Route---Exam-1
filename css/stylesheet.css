@@ -1,0 +1,596 @@
+:root {
+    --purplePrimary: #8349f1;
+
+    --purpleFaint: #e9d4ff;
+    /*200*/
+    --purpleLightest: #dab2ff;
+    /*300*/
+    --purpleLighter: #c27aff;
+    /*400*/
+    --purpleLight: #ad46ff;
+    /*500*/
+    --purple: #9810fa;
+    /*600*/
+    --purpleDark: #8200db;
+    /*700*/
+    --purpleDarker: #6e11b0;
+    /*800*/
+    --purpleDarkest: #59168b;
+    /*900*/
+    --violetFaintest: #f5f3ff;
+    /*50*/
+    --violetFainter: #ede9fe;
+    /*100*/
+    --violetFaint: #ddd6ff;
+    /*200*/
+    --violetLightest: #c4b4ff;
+    /*300*/
+    --violetLighter: #a684ff;
+    /*400*/
+    --violetLight: #8e51ff;
+    /*500*/
+    --violet: #7f22fe;
+    /*600*/
+    --violetDark: #7008e7;
+    /*700*/
+    --violetDarker: #5d0ec0;
+    /*800*/
+    --violetDarkest: #4d179a;
+    /*900*/
+
+    --green: #00a63e;
+    --greenLight: #dcfce7;
+    --orange: #d08700;
+    --orangeLight: #fef9c2;
+    --blackMetal: #0b0e13;
+    --DarkGrey: #1a1a1a;
+    --DarkBlue: #1e2939;
+    --NavyBlue: #364153;
+    --pink: #e60076;
+    --gray-100: #f3f4f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--violet);
+    color: white;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to right, #4d179acc, #59168bcc), url(../assets/imgs/hero-bg-img.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center, center;
+}
+
+.text-gradientVioletOrange {
+    background-image: linear-gradient(to right, var(--violet) 40%, var(--orange));
+    background-clip: text;
+    color: transparent;
+}
+
+.fw-black {
+    font-weight: 900 !important;
+}
+
+.text-gradientVioletPurple {
+    background-image: linear-gradient(to right, var(--violet) 40%, var(--purple));
+    background-clip: text;
+    color: transparent;
+    font-weight: 900;
+
+}
+
+.bg-gray100 {
+    background-color: var(--gray-100);
+}
+
+.border-gray100 {
+    border-color: var(--gray-100) !important;
+}
+
+.text-violetFainter {
+    color: var(--violetFainter);
+}
+
+.bg-violetFainter {
+    background-color: var(--violetFainter);
+}
+
+.border-violetFainter {
+    border-color: var(--violetFainter);
+}
+
+.text-violetFaint {
+    color: var(--violetFaint);
+}
+
+.bg-violetFaint {
+    background-color: var(--violetFaint);
+}
+
+.border-violetFaint {
+    border-color: var(--violetFaint) !important;
+}
+
+.text-violetLightest {
+    color: var(--violetLightest);
+}
+
+.bg-violetLightest {
+    background-color: var(--violetLightest);
+}
+
+.border-violetLightest {
+    border-color: var(--violetLightest);
+}
+
+.text-violetLighter {
+    color: var(--violetLighter);
+}
+
+.bg-violetLighter {
+    background-color: var(--violetLighter);
+}
+
+.border-violetLighter {
+    border-color: var(--violetLighter);
+}
+
+.text-violetLight {
+    color: var(--violetLight);
+}
+
+.bg-violetLight {
+    background-color: var(--violetLight);
+}
+
+.border-violetLight {
+    border-color: var(--violetLight);
+}
+
+.text-violet {
+    color: var(--violet);
+}
+
+.bg-violet {
+    background-color: var(--violet);
+}
+
+.border-violet {
+    border-color: var(--violet);
+}
+
+.text-violetDark {
+    color: var(--violetDark);
+}
+
+.bg-violetDark {
+    background-color: var(--violetDark);
+}
+
+.border-violetDark {
+    border-color: var(--violetDark) !important;
+}
+
+.text-violetDarker {
+    color: var(--violetDarker);
+}
+
+.bg-violetDarker {
+    background-color: var(--violetDarker);
+}
+
+.border-violetDarker {
+    border-color: var(--violetDarker);
+}
+
+.text-violetDarkest {
+    color: var(--violetDarkest);
+}
+
+.bg-violetDarkest {
+    background-color: var(--violetDarkest);
+}
+
+.border-violetDarkest {
+    border-color: var(--violetDarkest);
+}
+
+.text-purpleFaint {
+    color: var(--purpleFaint);
+}
+
+.bg-purpleFaint {
+    background-color: var(--purpleFaint);
+}
+
+.border-purpleFaint {
+    border-color: var(--purpleFaint);
+}
+
+.text-purpleLightest {
+    color: var(--purpleLightest);
+}
+
+.bg-purpleLightest {
+    background-color: var(--purpleLightest);
+}
+
+.border-purpleLightest {
+    border-color: var(--purpleLightest);
+}
+
+.text-purpleLighter {
+    color: var(--purpleLighter);
+}
+
+.bg-purpleLighter {
+    background-color: var(--purpleLighter);
+}
+
+.border-purpleLighter {
+    border-color: var(--purpleLighter);
+}
+
+.text-purpleLight {
+    color: var(--purpleLight);
+}
+
+.bg-purpleLight {
+    background-color: var(--purpleLight);
+}
+
+.border-purpleLight {
+    border-color: var(--purpleLight);
+}
+
+.text-purple {
+    color: var(--purple);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.border-purple {
+    border-color: var(--purple);
+}
+
+.hoverViolet:hover {
+    color: var(--violet) !important;
+}
+
+
+.text-pink {
+    color: var(--pink);
+}
+
+.bg-pink-orangeGradient {
+    background-image: linear-gradient(135deg, var(--pink), oklch(76.9% .188 70.08));
+}
+
+
+.max-w-4xl {
+    max-width: 56rem;
+}
+
+.max-w-2xl {
+    max-width: 42rem;
+}
+
+.translateT50 {
+    transform: translateY(-50%);
+}
+
+.mainButton {
+    background-image: linear-gradient(to right, var(--violet), var(--purple));
+    background-size: 200%;
+    transition: 200ms ease-in-out all;
+}
+
+.mainButton:hover {
+    background-position: 100%;
+    cursor: pointer;
+}
+
+.secondaryButton:hover {
+    background-color: var(--violetLightest);
+    color: var(--violetDarkest);
+    transition: 200ms linear all;
+}
+
+.featurePropertyCard:hover .imgContainer img {
+    scale: 1.1;
+    transition: 200ms linear all;
+    cursor: pointer;
+}
+
+.featurePropertyCard .imgContainer {
+    aspect-ratio: 9/5;
+}
+
+.featurePropertyCardUser img {
+    width: 2rem;
+}
+
+.favouriteContainer:hover {
+    color: red !important;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.iconContainer {
+    width: 3rem;
+    aspect-ratio: 3/4;
+}
+
+.squareIconContainer {
+    width: 4rem;
+    height: 4rem;
+    transition: 200ms all linear;
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+button.bg-green:hover {
+    background-color: hsl(142, 100%, 25%);
+}
+
+button.bg-purple:hover {
+    background-color: hsl(275, 96%, 42%);
+}
+
+button.bg-orange:hover {
+    background-color: hsl(39, 100%, 31%)
+}
+
+.bg-greenLight {
+    background-color: var(--greenLight);
+}
+
+.bg-orangeLight {
+    background-color: var(--orangeLight);
+}
+
+.tab-pane img {
+    aspect-ratio: 17/10;
+}
+
+#Our-Services .nav .nav-link {
+    color: var(--NavyBlue);
+    font-weight: 700;
+    border-radius: 0;
+    border-bottom: 2px solid transparent;
+}
+
+#Our-Services .nav .nav-link:hover {
+    color: var(--violet);
+    border-bottom: 2px solid var(--violetLighter);
+}
+
+#Our-Services .nav .nav-link.active {
+    background-color: var(--violetFaintest);
+    color: var(--violet);
+    border-bottom: 2px solid var(--violet);
+}
+
+#Client-Reviews .carousel-item img,
+.megaMenu img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.megaMenu {
+    width: 75vw;
+    /* right: -25rem; */
+    transform: translateX(25rem);
+}
+
+@media(max-width:991px) {
+    .megaMenu {
+        width: 75vw;
+        transform: translateX(0);
+
+    }
+
+}
+
+.megaMenu a:hover {
+    color: var(--violet) !important;
+}
+
+.carousel-indicators button {
+    width: 1rem !important;
+    height: 1rem !important;
+}
+
+#FAQ .accordion-button:not(.collapsed) {
+    color: inherit !important;
+    background-color: inherit;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+
+}
+
+#FAQ .accordion-button:hover {
+    background-color: hsl(0, 0%, 95%) !important;
+}
+
+#FAQ .accordion-button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.hoverBorderViolet:hover {
+    border-color: var(--violet) !important;
+}
+
+.hoverBorderPurple:hover {
+    border-color: var(--purple) !important;
+}
+
+.hoverBorderPink:hover {
+    border-color: var(--pink) !important;
+}
+
+.hoverBorderPrimary:hover {
+    border-color: #0d6efd !important;
+}
+
+.hoverContactUsCard {
+    transition: 200ms all linear;
+}
+
+.hoverContactUsCard:hover {
+    transform: translateY(-1rem);
+}
+
+.hoverContactUsCard:hover .squareIconContainer {
+    scale: 1.1;
+}
+
+.SMcontainer .fa-stack {
+    transition: 200ms all linear;
+}
+
+.SMcontainer .fa-stack:hover>i:first-child {
+    opacity: .4 !important;
+    transition: 200ms all linear;
+
+}
+
+.SMcontainer .fa-stack:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.bg-violet-purpleGradient {
+    background-image: linear-gradient(to bottom right, var(--violet), var(--purple));
+}
+
+.bg-darkviolet-darkpurpleGradient {
+    background-image: linear-gradient(to right, var(--violetDarkest), var(--purpleDarkest));
+}
+
+.cursorpointer:hover {
+    cursor: pointer;
+}
+
+.hoverTransformtop {
+    transition: 200ms all linear;
+
+}
+
+.hoverTransformtop:hover {
+    transform: translateY(-0.5rem);
+
+}
+
+#navBar .nav-link.active,
+#navBar .dropdown-toggle.show {
+    color: var(--violet);
+    font-weight: 700;
+}
+
+#navBar .nav-item {
+    position: relative;
+}
+
+#navBar .nav-link:hover {
+    color: var(--violet);
+
+}
+
+#navBar .nav-link::before {
+    content: "";
+    background-color: var(--violet);
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#navBar .nav-link.active::before,
+#navBar .nav-link:hover::before,
+#navBar .dropdown-toggle.show::before {
+    width: 100%;
+}
+
+.resourceCard:hover .fa-arrow-right {
+    transform: translateX(0.25rem);
+    transition: all 200ms linear;
+}
+
+.resourceCard:hover .hoverViolet {
+    color: var(--violet);
+}
+
+.resourceCard:hover .hoverGreen {
+    color: var(--green);
+}
+.resourceCard:hover .hoverPurple {
+    color: var(--purple);
+}
+.featuredPropertyCard:hover {
+    background-color: hsl(0, 0%, 70%) !important;
+    transition: all 200ms linear;
+    cursor: pointer;
+}
+.sectionTitle span::before,
+.sectionTitle span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 5rem;
+    height: 3px;
+    transform: translateY(-50%);
+}
+.sectionTitle span::before {
+    right: 100%;
+    transform: translateX(-1rem);
+    background: linear-gradient(to left, var(--violet), transparent);
+}
+.sectionTitle span::after {
+    left: 100%;
+    transform: translateX(1rem);
+    background: linear-gradient(to right,var(--violet), transparent);
+}
+#Client-Reviews .sectionTitle span::before {
+    right: 100%;
+    transform: translateX(-1rem);
+    background: linear-gradient(to left, gold, transparent);
+}
+#Client-Reviews .sectionTitle span::after {
+    left: 100%;
+    transform: translateX(1rem);
+    background: linear-gradient(to right, gold, transparent);
+}
